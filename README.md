@@ -55,3 +55,4 @@ Copy and use the following video URL for testing:
 4. Preview captions in real-time.
 5. Edit or delete captions as needed.
 6. Export captions when finished.
+
