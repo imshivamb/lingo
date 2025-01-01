@@ -53,12 +53,12 @@ export function CaptionEditor({
   };
 
   return (
-    <div className="max-w-4xl mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+    <div className="max-w-4xl mx-auto mt-8 p-4 md:p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
       <div className="mb-8">
         <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
           Add New Caption
         </h2>
-        <div className="flex gap-4">
+        <div className="flex gap-4 md:flex-row flex-col items-center">
           <input
             type="text"
             value={newCaptionText}
@@ -73,7 +73,7 @@ export function CaptionEditor({
           />
           <button
             onClick={handleAddCaption}
-            className="inline-flex items-center gap-2 bg-fuchsia-500 text-white px-6 py-2 rounded-full hover:bg-fuchsia-600 transition-colors"
+            className="inline-flex items-center text-sm md:text-base gap-2 bg-fuchsia-500 text-white px-6 py-2 rounded-full hover:bg-fuchsia-600 transition-colors"
           >
             <Plus className="w-4 h-4" />
             Add at {formatTime(currentTime)}
@@ -89,10 +89,10 @@ export function CaptionEditor({
           {captions.length > 0 && (
             <button
               onClick={handleExportCaptions}
-              className="inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors"
+              className="inline-flex items-center gap-2 text-sm md:text-base bg-blue-500 text-white px-2 md:px-4 py-2 rounded-full hover:bg-blue-600 transition-colors"
             >
               <Download className="w-4 h-4" />
-              Export as SRT
+              Export
             </button>
           )}
         </div>

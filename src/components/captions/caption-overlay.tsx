@@ -20,7 +20,7 @@ export function CaptionOverlay({ captions, currentTime }: CaptionOverlayProps) {
       {activeCaptions.map((caption) => (
         <div
           key={caption.id}
-          className="bg-black/85 dark:bg-gray-900/95 text-white px-6 py-3 rounded-lg text-lg max-w-[85%] text-center mb-3 shadow-lg backdrop-blur-sm animate-fade-in"
+          className="bg-black/85 dark:bg-gray-900/95 text-white px-4 py-1.5 md:px-6 md:py-3 rounded-lg text-sm md:text-lg max-w-[85%] text-center mb-3 shadow-lg backdrop-blur-sm animate-fade-in"
           style={{
             textShadow: "0px 1px 2px rgba(0,0,0,0.3)",
           }}
