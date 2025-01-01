@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Video Captioner
+
+A web application for adding, editing, and managing video captions.
+
+## Live Demo
+[https://lingo-ecru.vercel.app/](https://lingo-ecru.vercel.app/)
+
+## URL for Testing
+[https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4](https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4)
+
+## Features
+- Add captions to videos with timestamps
+- Real-time preview of captions
+- Export captions in SRT format
+- Dark/light mode support
+- Keyboard shortcuts
+
+## Tech Stack
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+   ```bash
+   git clone https://github.com/imshivamb/lingo
+   cd video-captioner
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+### Testing Video URL
+Copy and use the following video URL for testing:
+[https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4](https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4)
 
-To learn more about Next.js, take a look at the following resources:
+### Basic Flow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Paste a video URL and click "Load Video."
+2. The video player will appear with controls.
+3. Add captions at specific timestamps.
+4. Preview captions in real-time.
+5. Edit or delete captions as needed.
+6. Export captions when finished.
